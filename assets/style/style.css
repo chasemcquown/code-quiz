@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1b315b;
+}
+
+header {
+  padding: 20px 35px;
+  background-color: #1b315b;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-position: 80%;
+  z-index: 999;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: white solid 5px;
+  background-color: #3da3ce;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  background-color: blanchedalmond;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.top-item {
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.questions {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  border: 5px solid white;
+  background-color: #3da3ce;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.container,
+.questions {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btnStyle {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: #1b315b;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px #18252b;
+}
+
+.btnStyle:hover {
+  box-shadow: 0 2px #18252b;
+  top: -2px;
+}
+
+.btnStyle:active {
+  box-shadow: 0 0px #18252b;
+  top: 0;
+}
+
+.vhs,
+.timer {
+  border-radius: 25px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  border: 5px solid white;
+  background-color: #3da3ce;
+}
