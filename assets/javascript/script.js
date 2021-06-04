@@ -1,13 +1,75 @@
 // identify start button
 var startBtn = document.querySelector("#start");
 
+// identify container div for qeustions and answers for appending purposes
+var parentDiv = document.querySelector(".container"); 
+
+// identify high scores link
+var scoreBtn = document.querySelector("#high-scores"); 
+
 // time variable 
-var timer = 75; 
+var timer = 120; 
 
 //player score variable; player starts with 10 points
 var playerScore = 10;
 
+// create question header elements
+var question = document.createElement("h2");
+question.textContent = "question1";
+question.className = ".questions"; 
 
+
+// create answer button elements
+var answer1 = document.createElement("button"); 
+answer1.className = ".btn.style";
+var answer2 = document.createElement("button");
+answer2.className = ".btnStyle";
+var answer3 = document.createElement("button");
+answer3.className = ".btnStyle";
+var answer4 = document.createElement("button");
+answer4.className = ".btnStyle";
+var answer5 = document.createElement("button");
+answer5.className = ".btnStyle";
+
+
+
+function questionOne() {
+
+    parentDiv.appendChild("question");
+
+    // add 4 button elements below
+    parentDiv.appendChild(answer2); 
+    
+
+    questionTwo();
+};
+
+function questionTwo() {
+    // change h2 tags text content below
+
+    // add 4 button elements below
+    questionThree();
+};
+
+function questionThree() {
+    // change h2 tags text content below
+
+    // add 4 button elements below
+    questionFour();
+};
+
+function questionFour() {
+    // change h2 tags text content below
+
+    // add 4 button elements below
+    questionFive();
+};
+
+function questionFive() {
+    // change h2 tags text content below
+
+    // add 4 button elements below
+}
 
 
 
@@ -33,23 +95,8 @@ function startQuiz() {
 
     // subtract from time count if player's answer is wrong 
 
-
+    questionOne();
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // add event listener to start button 
