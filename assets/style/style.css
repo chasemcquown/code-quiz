@@ -57,12 +57,16 @@ nav {
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
+  text-align: center;
 }
 
 .questions {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container {
@@ -75,6 +79,7 @@ nav {
   background-color: #3da3ce;
   margin-left: 300px;
   margin-right: 300px;
+  margin-bottom: 20px;
 }
 
 .container,
@@ -92,6 +97,75 @@ nav {
   display: inline-block;
   padding: 10px 15px;
   background: #1b315b;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px #18252b;
+}
+
+.btnStyle:hover {
+  box-shadow: 0 2px #18252b;
+  top: -2px;
+}
+
+.btnStyle:active {
+  box-shadow: 0 0px #18252b;
+  top: 0;
+}
+
+.answerBtns {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: #1b315b;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px #18252b;
+  margin-top: 15px;
+}
+
+.answerBtns:hover {
+  box-shadow: 0 2px #18252b;
+  top: -2px;
+}
+
+.answerBtns:active {
+  box-shadow: 0 0px #18252b;
+  top: 0;
+}
+
+.btnStyleWrong {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: red;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px #18252b;
+}
+
+.btnStyleRight {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: #247a0a;
   font-size: 1.2rem;
   border-radius: 12px;
   position: relative;
