@@ -10,9 +10,6 @@ var body = document.querySelector("body");
 // identify high scores link
 var scoreBtn = document.querySelector("#high-scores"); 
 
-// time variable 
-var timer = 120; 
-
 //player score variable; player starts with 10 points
 var playerScore = 10;
 
@@ -49,6 +46,22 @@ answer5.textContent = "IDK";
 
 // questionOne function will be responsible for add event listeners to buttons. Once a button is clicked, an alert displays letting the player know they are either correct or wrong. Also, depending on their answer choice, they get a point added or subtracted from the score. 
 function questionOne() {
+
+    // time logic
+    var startingTime = 2;
+    let time = startingTime * 60; 
+    var countDownEl = document.querySelector("#count-down");
+
+    setInterval(updateCountdown, 1000);
+
+    function updateCountdown () {
+        const minutes = Math.floor(time/60);
+        let seconds = time % 60;
+        countDownEl.innerHTML = `${minutes}: ${seconds}`;
+        time--;
+        time = time < 0 ? 0 : time; 
+};
+
 
     body.appendChild(newDiv); 
     newDiv.appendChild(question1);
