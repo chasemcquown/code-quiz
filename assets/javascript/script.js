@@ -86,6 +86,8 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
+        savePlayerScore();
+
         question3();
     }); 
 
@@ -103,6 +105,8 @@ function questionOne() {
         answer3.textContent = "variable";
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
+
+        savePlayerScore();
 
         question3();
     }); 
@@ -122,6 +126,8 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
+        savePlayerScore();
+
         question3();
     }); 
 
@@ -140,6 +146,8 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
+        savePlayerScore();
+
         question3();
     }); 
 
@@ -157,6 +165,8 @@ function questionOne() {
         answer3.textContent = "variable";
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
+
+        savePlayerScore();
 
         question3();
     }); 
@@ -184,7 +194,8 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        // call question 4 below
+        savePlayerScore();
+
         question4();
     }); 
 
@@ -203,7 +214,8 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        // call question 4 below
+        savePlayerScore();
+
         question4();
     }); 
 
@@ -222,7 +234,8 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        // call question 4 below
+        savePlayerScore();
+
         question4();
     }); 
 
@@ -241,7 +254,8 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        // call question 4 below
+        savePlayerScore();
+
         question4();
     }); 
 
@@ -261,7 +275,8 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        // call question 4 below
+        savePlayerScore();
+
         question4();
     }); 
 };
@@ -283,7 +298,8 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        // call question 4 below
+        savePlayerScore();
+
         question5();
     }); 
 
@@ -302,7 +318,8 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        // call question 4 below
+        savePlayerScore();
+
         question5();
     }); 
 
@@ -321,7 +338,8 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        // call question 4 below
+        savePlayerScore();
+
         question5();
     }); 
 
@@ -340,7 +358,8 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        // call question 4 below
+        savePlayerScore();
+
         question5();
     }); 
 
@@ -359,8 +378,10 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        // call question 4 below
+        savePlayerScore();
+
         question5();
+
     }); 
 
 
@@ -384,7 +405,9 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        // call question 4 below
+        savePlayerScore();
+
+
 
     }); 
 
@@ -403,7 +426,9 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        // call question 4 below
+        savePlayerScore();
+
+
 
     }); 
 
@@ -422,7 +447,9 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        // call question 4 below
+        savePlayerScore();
+
+
 
     }); 
 
@@ -441,7 +468,8 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        // call question 4 below
+        savePlayerScore();
+
 
     }); 
 
@@ -449,6 +477,7 @@ function question5() {
         
         
         playerScore--;
+
 
 
         
@@ -460,11 +489,18 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        // call question 4 below
+        savePlayerScore();
 
     }); 
 
-}
+
+
+};
+
+
+function savePlayerScore () {
+    // local storage set item
+};
 
 // logic to begin game is below
 function startQuiz() {
