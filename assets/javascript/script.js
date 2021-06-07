@@ -4,14 +4,25 @@ var startBtn = document.querySelector("#start");
 // identify container div for qeustions and answers for appending purposes
 var parentDiv = document.querySelector("#parentDiv"); 
 
+// identify container for high scores and time 
+var scoreContainer = document.querySelector("#top-container");
+
 // identify body 
 var body = document.querySelector("body"); 
 
 // identify high scores link
-var scoreBtn = document.querySelector("#high-scores"); 
+var highScores = document.querySelector("#high-scores"); 
+
+// previous scores
+ var previousScores = document.querySelector("#previous-scores");
 
 //player score variable; player starts with 10 points
 var playerScore = 10;
+
+// get playerScore from localStorage
+var getPlayerScore = localStorage.getItem("playerScore");
+
+
 
 // create new <div> parent container for question and answers
 var newDiv = document.createElement("div")
@@ -27,7 +38,6 @@ question1.textContent = "What symbols should be used when identifying an item's 
 // create answer button elements for quesion 1
 var answer1 = document.createElement("button"); 
 answer1.className = "answerBtns";
-answer1.setAttribute = "value" , "true"
 answer1.textContent = "These brackets: [ ]";
 var answer2 = document.createElement("button");
 answer2.className = "answerBtns";
@@ -76,6 +86,8 @@ function questionOne() {
         
         playerScore++;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -86,7 +98,7 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
-        savePlayerScore();
+        
 
         question3();
     }); 
@@ -96,6 +108,8 @@ function questionOne() {
 
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -106,7 +120,7 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
-        savePlayerScore();
+        
 
         question3();
     }); 
@@ -116,6 +130,8 @@ function questionOne() {
 
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -126,7 +142,7 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
-        savePlayerScore();
+        
 
         question3();
     }); 
@@ -136,6 +152,8 @@ function questionOne() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -146,7 +164,7 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
-        savePlayerScore();
+        
 
         question3();
     }); 
@@ -156,6 +174,8 @@ function questionOne() {
 
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -166,7 +186,7 @@ function questionOne() {
         answer4.textContent = "string";
         answer5.textContent = "all of the above";
 
-        savePlayerScore();
+        
 
         question3();
     }); 
@@ -184,6 +204,8 @@ function question3() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -194,7 +216,7 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        savePlayerScore();
+        
 
         question4();
     }); 
@@ -204,6 +226,8 @@ function question3() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -214,7 +238,7 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        savePlayerScore();
+        
 
         question4();
     }); 
@@ -224,6 +248,8 @@ function question3() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -234,7 +260,7 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        savePlayerScore();
+        
 
         question4();
     }); 
@@ -244,6 +270,8 @@ function question3() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -254,7 +282,7 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        savePlayerScore();
+        
 
         question4();
     }); 
@@ -264,7 +292,7 @@ function question3() {
         
         playerScore++;
 
-        console.log(playerScore);
+        savePlayerScore();
 
         
         // code below will display new question and a new set of answers
@@ -275,7 +303,7 @@ function question3() {
         answer4.textContent = "In the script file";
         answer5.textContent = "you dont need a link";
 
-        savePlayerScore();
+        
 
         question4();
     }); 
@@ -288,6 +316,8 @@ function question4() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -298,7 +328,7 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        savePlayerScore();
+        
 
         question5();
     }); 
@@ -308,6 +338,8 @@ function question4() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -318,7 +350,7 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        savePlayerScore();
+        
 
         question5();
     }); 
@@ -328,6 +360,8 @@ function question4() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -338,7 +372,7 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        savePlayerScore();
+        
 
         question5();
     }); 
@@ -348,6 +382,8 @@ function question4() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -358,7 +394,7 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        savePlayerScore();
+        
 
         question5();
     }); 
@@ -368,6 +404,8 @@ function question4() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -378,7 +416,7 @@ function question4() {
         answer4.textContent = "@";
         answer5.textContent = "$";
 
-        savePlayerScore();
+        
 
         question5();
 
@@ -395,6 +433,8 @@ function question5() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -405,7 +445,7 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        savePlayerScore();
+        
 
 
 
@@ -416,6 +456,8 @@ function question5() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -426,7 +468,7 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        savePlayerScore();
+        
 
 
 
@@ -437,6 +479,8 @@ function question5() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
         
         // code below will display new question and a new set of answers
@@ -447,7 +491,7 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        savePlayerScore();
+        
 
 
 
@@ -458,6 +502,7 @@ function question5() {
         
         playerScore--;
 
+        savePlayerScore();
 
         
         // code below will display new question and a new set of answers
@@ -468,7 +513,7 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        savePlayerScore();
+        
 
 
     }); 
@@ -478,6 +523,8 @@ function question5() {
         
         playerScore--;
 
+        savePlayerScore();
+
 
 
         
@@ -489,7 +536,6 @@ function question5() {
         answer4.textContent = "cd ..";
         answer5.textContent = "cd /";
 
-        savePlayerScore();
 
     }); 
 
@@ -498,9 +544,28 @@ function question5() {
 };
 
 
-function savePlayerScore () {
+var savePlayerScore = function() {
     // local storage set item
-};
+    localStorage.setItem("playerScore", playerScore);
+    
+}; 
+
+previousScores.addEventListener("click", function() {
+
+  
+        previousScores.textContent  = "Your previous attempt: " + getPlayerScore;
+
+ 
+ 
+ });
+
+highScores.addEventListener("click", function() {
+
+    highScores.textContent = "Score for this attempt: " + playerScore;
+ 
+ 
+ });
+ 
 
 // logic to begin game is below
 function startQuiz() {
